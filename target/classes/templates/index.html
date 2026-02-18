@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras Agora - Cadastro de Produtos</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.432);
+        box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.185);
+        padding: 20px;
+    }
+
+    header h1 {
+        font-family: 'Poppins', sans-serif;
+
+        color: #272727;
+        font-size: 2rem;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        width: 100%;
+    }
+
+    form {
+        border-radius: 10px;
+        border: solid 1px #2727271a;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.281);
+        padding: 30px;
+
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        border-radius: 2px solid black;
+
+    }
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Poppins', sans-serif;
+        width: 300px;
+        padding: 5px 8px;
+        border-radius: 8px;
+
+        margin: 10px 0px;
+    }
+
+    input {
+        border: solid 1px #2727271a;
+        box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.281);
+        font-family: 'Poppins', sans-serif;
+        width: 280px;
+        padding: 5px 8px;
+        border-radius: 8px;
+        border-left: 2px solid #00af00;
+
+    }
+
+
+
+    .input-cat {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+
+    select {
+        font-family: 'Poppins', sans-serif;
+        width: 200px;
+        padding: 5px 8px;
+        border-radius: 8px;
+        border: solid 1px #2727271a;
+        box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.281);
+    }
+
+
+    label {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+    }
+
+    button{
+        margin-top: 20px;
+        width: 110px;
+        height: 33px;
+        border-radius: 6px;
+        border: solid 1px #2727271a;
+        box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.281);
+        background-color: #00af00;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    footer h1{
+        font-family: 'Poppins', sans-serif;
+        margin: 10px 30px;
+        color: #272727;
+    }
+</style>
+
+<body>
+<header>
+    
+    <h1>Compras Agora - Cadastro de Produtos!</h1>
+</header>
+
+<section>
+
+
+        <form action="/cadastro" method="POST">
+            <div class="inputs">
+
+                <div class="input">
+                    <label for="nomeProduto">Nome do produto</label>
+                    <input type="text" id="nomeProduto" name="nomeProduto" placeholder="EX: Smartphone" required>
+                </div>
+
+                <div class="input">
+                    <div class="input-info">
+                        <label for="precoProduto">Preço do produto</label>
+                        <input type="number" id="precoProduto" name="precoProduto" placeholder="EX: R$ 500" required>
+                    </div>
+                </div>
+
+                <div class="input">
+                    <label for="categoria">Categoria:</label>
+
+                    <select id="categoria" name="categoriaProduto">
+                        <option value="eletronicos">Eletrônicos</option>
+                        <option value="moda">Moda e Acessórios</option>
+                        <option value="casa">Casa e Decoração</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit">Enviar</button>
+
+
+
+        </form>
+
+
+</section>
+
+<footer>
+    <a href=""><img src="img/gitHub.png" alt=""></a>
+    <a href=""><img src="img/gitHub.png" alt=""></a>
+    <a href=""><img src="img/gitHub.png" alt=""></a>
+    <a href=""><img src="img/gitHub.png" alt=""></a>
+
+    <h1>SENAI ANCHIETA BACKEND</h1>
+</footer>
+</body>
+
+</html>
